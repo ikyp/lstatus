@@ -42,7 +42,7 @@ int main(void)
 		return 1;
 	}
 
-	for (;;sleep(59)) {
+	for (;;sleep(1)) {
 		set_status(time_now());
 	}
 
