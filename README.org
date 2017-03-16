@@ -1,0 +1,15 @@
+#+TITLE: *My-Dwmstatus*
+#+Author: ikyp
+#+DATE: 2017-03-16
+
+* Intro
+
+  This repo is a dwmstatus of mine.
+  It's very simple & clear.
+
+* Usage
+
+#+BEGIN_SRC 
+make
+make install
+#+END_SRC
