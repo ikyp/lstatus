@@ -2,19 +2,19 @@
 #+Author: ikyp
 #+DATE: 2017-03-16
 
-* Intro
+** Intro
 
   This repo is a dwmstatus of mine.
 
   It's very simple & clear.
 
-* Usage
+** Usage
 
 #+BEGIN_SRC 
 make
 make install
 #+END_SRC
 
-Be installed to */usr/local/bin*
+Be installed to ~/usr/local/bin~
 
-Then, add *dwmstatus &* to *.xprofile* or *.xinitrc*
+Then, add ~dwmstatus &~ to *.xprofile* or *.xinitrc*
