@@ -5,6 +5,7 @@
 * Intro
 
   This repo is a dwmstatus of mine.
+
   It's very simple & clear.
 
 * Usage
@@ -13,3 +14,7 @@
 make
 make install
 #+END_SRC
+
+Be installed to */usr/local/bin*
+
+Then, add *dwmstatus &* to *.xprofile* or *.xinitrc*
