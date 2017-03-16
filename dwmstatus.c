@@ -8,7 +8,7 @@
 
 static Display *dpy;
 
-static void set_status(char *str)
+static void set_status(const char *str)
 {
 	XStoreName(dpy, DefaultRootWindow(dpy), str);
 	XSync(dpy, False);
