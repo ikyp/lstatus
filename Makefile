@@ -28,11 +28,11 @@ clean:
 	@rm ${NAME} ${OBJ}
 
 install:
-	@echo install ${NAME} to /usr/local/bin
-	@cp ${NAME} /usr/local/bin
+	@echo install ${NAME} to /usr/local/bin/
+	@cp ${NAME} /usr/local/bin/
 
 uninstall:
 	@echo removing executable file from /usr/local/bin
-	@rm /usr/local/${NAME}
+	@rm /usr/local/bin/${NAME}
 
 .PHONY: all options clean install uninstall
