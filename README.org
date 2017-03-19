@@ -1,10 +1,12 @@
-#+TITLE: *My-Dwmstatus*
+#+TITLE: *lstatus*  -- /Little Status/
 #+Author: ikyp
 #+DATE: 2017-03-16
 
 ** Intro
 
-  This repo is a dwmstatus of mine.
+  This repo is a little /program/ about ~status bar~ on *Window Manager*.
+
+  Called *lstatus*
 
   It's very simple & clear.
 
@@ -17,4 +19,4 @@ make install
 
 Be installed to ~/usr/local/bin~
 
-Then, add ~dwmstatus &~ to *.xprofile* or *.xinitrc*
+Then, add ~lstatus &~ to *.xprofile* or *.xinitrc*

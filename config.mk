@@ -1,4 +1,4 @@
-NAME = dwmstatus
+NAME = lstatus
 
 PREFIX = /usr/local
 MANPREFIX = ${PREFIX}/share/man
