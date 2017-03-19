@@ -29,10 +29,10 @@ clean:
 
 install:
 	@echo install ${NAME} to /usr/local/bin/
-	@cp ${NAME} /usr/local/bin/
+	@cp -f ${NAME} ${BIN_PATH}/
 
 uninstall:
 	@echo removing executable file from /usr/local/bin
-	@rm /usr/local/bin/${NAME}
+	@rm -f ${BIN_PATH}/${NAME}
 
 .PHONY: all options clean install uninstall

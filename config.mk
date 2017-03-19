@@ -1,7 +1,7 @@
 NAME = lstatus
 
 PREFIX = /usr/local
-MANPREFIX = ${PREFIX}/share/man
+BIN_PATH = ${PREFIX}/bin
 
 X11INC = /usr/include/X11/
 # X11LIB = /usr/lib/

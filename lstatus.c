@@ -6,14 +6,6 @@
 
 #define TIME_BUFF_SIZE 33
 
-static Display *dpy;
-
-static void set_status(const char *str)
-{
-	XStoreName(dpy, DefaultRootWindow(dpy), str);
-	XSync(dpy, False);
-}
-
 static char * time_now(void)
 {
 	static time_t t;
@@ -37,13 +29,15 @@ static char * time_now(void)
 
 int main(void)
 {
+	static Display *dpy;
 	if (!(dpy = XOpenDisplay(NULL))) {
 		fprintf(stderr, "dwmstatus: cannot open display.\n");
 		return 1;
 	}
 
 	for (;;sleep(1)) {
-		set_status(time_now());
+		XStoreName(dpy, DefaultRootWindow(dpy), time_now());
+		XSync(dpy, False);
 	}
 
 	XCloseDisplay(dpy);
