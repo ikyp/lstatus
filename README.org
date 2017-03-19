@@ -6,7 +6,7 @@
 
   This repo is a little /program/ about ~status bar~ on *Window Manager*.
 
-  Called *lstatus*
+  Called *lstatus*.
 
   It's very simple & clear.
 
