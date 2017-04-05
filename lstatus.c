@@ -51,7 +51,7 @@ static const char * bat_status(void)
 	return status;	
 }
 
-static const char * bat_present(void)
+static const char * bat_percent(void)
 {
 	static char percent[C_BUFF];
 	FILE *fp;
@@ -82,7 +82,7 @@ int main(void)
 	}
 
 	for (;;sleep(1)) {
-		snprintf(total_msg, TOTAL_BUFF, "%s Status: %s Percent: %s%%", time_now(), bat_status(), bat_present());
+		snprintf(total_msg, TOTAL_BUFF, "%s Status: %s Percent: %s%%", time_now(), bat_status(), bat_percenty());
 		XStoreName(dpy, DefaultRootWindow(dpy), total_msg);
 		XSync(dpy, False);
 	}
