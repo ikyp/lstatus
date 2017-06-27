@@ -7,7 +7,7 @@
 #define TIME_BUFF_SIZE 33
 #define S_BUFF         12
 #define C_BUFF         3
-#define TOTAL_BUFF     66
+#define TOTAL_BUFF     60
 #define STATUS         "/sys/class/power_supply/BAT0/status"
 #define CAPACITY       "/sys/class/power_supply/BAT0/capacity"
 
@@ -82,7 +82,7 @@ int main(void)
 	}
 
 	for (;;sleep(1)) {
-		snprintf(total_msg, TOTAL_BUFF, "%s Status: %s Percent: %s%%", time_now(), bat_status(), bat_percenty());
+		snprintf(total_msg, TOTAL_BUFF, "%s 狀態: %s 電量: %s%%", time_now(), bat_status(), bat_percent());
 		XStoreName(dpy, DefaultRootWindow(dpy), total_msg);
 		XSync(dpy, False);
 	}
