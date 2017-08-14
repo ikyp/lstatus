@@ -81,10 +81,17 @@ int main(void)
 		return 1;
 	}
 
-	for (;;sleep(1)) {
-		snprintf(total_msg, TOTAL_BUFF, "%s 狀態: %s 電量: %s%%", time_now(), bat_status(), bat_percent());
-		XStoreName(dpy, DefaultRootWindow(dpy), total_msg);
-		XSync(dpy, False);
+	if (access(STATUS, F_OK) == 0) {
+		for (;;sleep(1)) {
+			snprintf(total_msg, TOTAL_BUFF, "%s 狀態: %s 電量: %s%%", time_now(), bat_status(), bat_percent());
+			XStoreName(dpy, DefaultRootWindow(dpy), total_msg);
+			XSync(dpy, False);
+		}
+	} else {
+		for (;;sleep(1)) {
+			XStoreName(dpy, DefaultRootWindow(dpy), time_now());
+			XSync(dpy, False);
+		}
 	}
 
 	XCloseDisplay(dpy);
