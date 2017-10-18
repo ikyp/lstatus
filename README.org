@@ -1,4 +1,4 @@
-#+TITLE: *lstatus*  -- /Little Status/
+#+TITLE: *lstatus*  -- /Little&Lightweight Status/
 #+Author: ikyp
 #+DATE: 2017-06-27
 
@@ -7,6 +7,10 @@
   This repo is a little /program/ about ~status bar~ on *Window Manager*.
 
   Called *lstatus*.
+
+  The ~l~ means *little* and *lightweight*.
+
+  The program only show you real need feature(At least to me).
 
   It's very simple & clear.
 
