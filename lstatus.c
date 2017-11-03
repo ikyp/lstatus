@@ -4,7 +4,7 @@
 #include <time.h>
 #include <X11/Xlib.h>
 
-#define TIME_BUFF_SIZE 33
+#define TIME_BUFF_SIZE 30
 #define S_BUFF         12
 #define C_BUFF         3
 #define TOTAL_BUFF     60
