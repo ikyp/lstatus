@@ -4,11 +4,8 @@ PREFIX = /usr/local
 BIN_PATH = ${PREFIX}/bin
 
 X11INC = /usr/include/X11/
-# X11LIB = /usr/lib/
 
-# INCS = -I. -I/usr/include -I${X11INC}
 INCS = -I${X11INC}
-# LIBS = -L/usr/lib -lc -L${X11LIB} -lX11
 LIBS = -L/usr/lib -lc -lX11
 
 DEBUG_CFLAGS = -g -std=c99 -pedantic -Wall -O0 ${INCS} ${CPPFLAGS}
