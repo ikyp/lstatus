@@ -38,7 +38,7 @@ static const char * bat_status(void)
 	FILE *fs;
 
 	if ((fs = fopen(STATUS, "r")) == NULL) {
-		perror("Fopen Function Error: ");
+		fputs("Fopen Function Error: ", stderr);
 		exit(EXIT_FAILURE);
 	}
 
@@ -57,12 +57,12 @@ static const char * bat_percent(void)
 	FILE *fp;
 
 	if ((fp = fopen(CAPACITY, "r")) == NULL) {
-		perror("Fopen Function Error: ");
+		fputs("Fopen Function Error: ", stderr);
 	        exit(EXIT_FAILURE);
 	}
 
 	if (fscanf(fp, "%s", percent) <= 0) {
-		perror("Fscanf Function Error: ");
+		fputs("Fscanf Function Error: ", stderr);
 		exit(EXIT_FAILURE);
 	}
 	fclose(fp);
@@ -77,8 +77,8 @@ int main(void)
 	
 	static Display *dpy;
 	if (!(dpy = XOpenDisplay(NULL))) {
-		fprintf(stderr, "dwmstatus: cannot open display.\n");
-		return 1;
+		fputs("dwmstatus: cannot open display.\n", stderr);
+		exit(EXIT_FAILURE);
 	}
 
 	if (access(STATUS, F_OK) == 0) {
