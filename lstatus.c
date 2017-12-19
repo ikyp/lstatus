@@ -7,7 +7,7 @@
 #define TIME_BUFF_SIZE 30
 #define S_BUFF         12
 #define C_BUFF         3
-#define TOTAL_BUFF     60
+#define TOTAL_BUFF     62
 #define STATUS         "/sys/class/power_supply/BAT0/status"
 #define CAPACITY       "/sys/class/power_supply/BAT0/capacity"
 
