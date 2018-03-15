@@ -4,7 +4,7 @@
 
 ** Intro
 
-  This repo is a little /program/ about ~status bar~ on *Window Manager*.
+  This repo is a little /program/ about ~status bar~ for *Window Manager*.
 
   Called *lstatus*.
 
