@@ -10,7 +10,7 @@
 
   The ~l~ means *little* and *lightweight*.
 
-  The program only show you real need feature(At least to me).
+  The program only has real need feature(At least to me).
 
   It's very simple & clear.
 
@@ -19,6 +19,8 @@
 #+BEGIN_SRC 
 make
 make install
+
+make clean #Clean the files of compiling , If u want do this
 #+END_SRC
 
 Be installed to ~/usr/local/bin~
