@@ -1,6 +1,6 @@
 #+TITLE: *lstatus*  -- /Little&Lightweight Status/
 #+Author: ikyp
-#+DATE: 2017-06-27
+
 
 ** Intro
 
@@ -10,7 +10,7 @@
 
   The ~l~ means *little* and *lightweight*.
 
-  The program only show you real need feature(At least to me).
+  The program only has real need feature(At least to me).
 
   It's very simple & clear.
 
@@ -19,11 +19,13 @@
 #+BEGIN_SRC 
 make
 make install
+
+make clean #Clean all files of compiling, If u want to do this
 #+END_SRC
 
 Be installed to ~/usr/local/bin~
 
-Then, add ~lstatus &~ to *.xprofile* or *.xinitrc*
+Then, add ~lstatus &~ to your *.xprofile* file or *.xinitrc* file.
 
 ** Screenshots
 
