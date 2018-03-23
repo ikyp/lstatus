@@ -1,6 +1,5 @@
 #+TITLE: *lstatus*  -- /Little&Lightweight Status/
 #+Author: ikyp
-#+DATE: 2017-06-27
 
 ** Intro
 
@@ -25,7 +24,7 @@ make clean #Clean the files of compiling , If u want do this
 
 Be installed to ~/usr/local/bin~
 
-Then, add ~lstatus &~ to *.xprofile* or *.xinitrc*
+Then, add ~lstatus &~ to your *.xprofile* file or *.xinitrc* file.
 
 ** Screenshots
 
