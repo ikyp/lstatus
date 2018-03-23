@@ -19,7 +19,7 @@
 make
 make install
 
-make clean #Clean the files of compiling , If u want do this
+make clean #Clean the files of compiling , If u want to do this
 #+END_SRC
 
 Be installed to ~/usr/local/bin~
