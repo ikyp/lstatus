@@ -28,4 +28,4 @@ Then, add ~lstatus &~ to *.xprofile* or *.xinitrc*
 ** Screenshots
 
 #+CAPTION: A screenshots of lstatus
-[[https://raw.githubusercontent.com/ikyp/lstatus/master/statusbar.png]]
+[[https://raw.githubusercontent.com/ikyp/lstatus/master/desktop.png]]
