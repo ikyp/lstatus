@@ -83,7 +83,7 @@ int main(void)
 
 	if (access(STATUS, F_OK) == 0) {
 		for (;;sleep(1)) {
-			snprintf(total_msg, TOTAL_BUFF, "%s 狀態: %s 電量: %s%%", time_now(), bat_status(), bat_percent());
+			snprintf(total_msg, TOTAL_BUFF, "%s Status: %s Power: %s%%", time_now(), bat_status(), bat_percent());
 			XStoreName(dpy, DefaultRootWindow(dpy), total_msg);
 			XSync(dpy, False);
 		}
